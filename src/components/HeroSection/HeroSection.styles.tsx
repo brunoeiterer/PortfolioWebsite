@@ -29,7 +29,7 @@ export const HeroTextContainer = styled.div`
 
     font-family: ${inter.style.fontFamily};
     font-weight: ${inter.style.fontWeight};
-    color: #D5DBDB;
+    color: #FFFFFF;
     line-height: 1.5rem;
 `;
 
