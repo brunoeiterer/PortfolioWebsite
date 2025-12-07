@@ -31,12 +31,48 @@ export default function Home() {
                     databases={['RavenDB (NoSql)']}
                 />
                 <ProfessionalExperience
-                    period={'2019 — 2021'} />
-                <ProfessionalExperience period={'2018 — 2019'} />
+                    period={'2019 — 2021'}
+                    titles={['Middle Software Engineer', 'Software Engineer']}
+                    company={'Gertec'}
+                    description='Development of credit card machines.'
+                    highlights={['Acted as Linux product expert, participating in critical projects and issues',
+                            'Developed an internal testing tool using C# and WPF',
+                            'Wrote the full testing documentation for the Linux devices'
+                    ]}
+                    types={'Embedded · Desktop'}
+                    languages={['C', 'C++', 'C#']}
+                    frameworks={['WPF']}
+                    databases={[]}
+                />
+                <ProfessionalExperience
+                    period={'2018 — 2019'}
+                    titles={['Embedded Software Intern']}
+                    company='ASML'
+                    description='Development of the EtherCAT protocol prototype.'
+                    highlights={[]}
+                    types={'Embedded'}
+                    languages={['C', 'C++', 'Python']}
+                    frameworks={[]}
+                    databases={[]}
+                />
             </Section>
 
             <Section id='academic-experience' title='Academic Experience'>
-                <ProfessionalExperience period={'2014 — 2018'} />
+                <ProfessionalExperience
+                    period={'2014 — 2018'}
+                    titles={['Floripa-Sat Team Member']}
+                    company='Embedded Systems Group - UFSC'
+                    description='Development of the first fully Brazillian nanosatellite.'
+                    highlights={['Development of the software for the electrical power system',
+                        'Participation in the hardware schematics and layout',
+                        'Development of the testing methodology of the project'
+                    ]}
+                    types={'Embedded'}
+                    languages={['C']}
+                    frameworks={[]}
+                    databases={[]}
+
+                />
             </Section>
 
             <Section id='projects' title='Projects'>
