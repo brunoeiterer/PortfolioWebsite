@@ -12,7 +12,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
             </HeroTextTitle>
             <HeroTextContainer>
                 <ul>
-                    <li>Generalist Software Engineer</li>
+                    <li>Full-Stack Software Engineer</li>
                     <li>7 years of experience</li>
                     <li>Enterprise • Embedded • Web • Desktop</li>
                     <li>Strong C#, C</li>
