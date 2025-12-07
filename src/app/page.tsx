@@ -5,11 +5,12 @@ import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Project from "@/components/Project";
 import NavBar from "@/components/NavBar";
 import Contact from "@/components/Contact";
+import BackToTopButton from "@/components/BackToTopButton";
 
 export default function Home() {
     return (
         <MainContainer>
-            <NavBar />
+            <NavBar id='nav' />
 
             <HeroSection id='about' />
 
@@ -56,6 +57,9 @@ export default function Home() {
             <Section id='contact' title='Contact'>
                 <Contact />
             </Section>
+
+            <BackToTopButton />
+
             {/*
                   <CarouselCard
             logoImageSource='/images/RDILogo.png'

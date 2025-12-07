@@ -4,13 +4,16 @@ import { useState } from "react";
 import HamburgerButton from "./HamburgerButton";
 import { NavBarContainer, NavBarItem } from "./NavBar.styles";
 
-export default function NavBar() {
+interface NavBarProps extends React.HTMLAttributes<HTMLElement> {
+
+}
+
+export default function NavBar({ id }: NavBarProps) {
     const [isNavDrawerOpen, setIsNavDrawerOpen] = useState(false);
-    console.log(isNavDrawerOpen);
 
     return (
         <>
-            <NavBarContainer $isOpen={isNavDrawerOpen}>
+            <NavBarContainer id={id} $isOpen={isNavDrawerOpen}>
                 <HamburgerButton onClick={() => setIsNavDrawerOpen(!isNavDrawerOpen)} />
                 <NavBarItem href='#about'>
                     About
