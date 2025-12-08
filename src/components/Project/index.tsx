@@ -4,6 +4,7 @@ import { ProjectCaption, ProjectContainer, ProjectContent, ProjectDescription, P
 import ProjectImage from "./ProjectImage";
 
 export interface ProjectProps {
+    url: string;
     title: string;
     description: string;
     caption: string;
@@ -13,11 +14,13 @@ export interface ProjectProps {
     techStack: string[];
 }
 
-export default function Project({ title, description, caption, images, videoSource, videoTitle, techStack }: ProjectProps) {
+export default function Project({ url, title, description, caption, images, videoSource, videoTitle, techStack }: ProjectProps) {
     return (
         <ProjectContainer>
 
-            <ProjectContent>
+            <ProjectContent
+                onClick={() => window.open(url, '_blank')}
+            >
                 <ProjectTitle>
                     { title }
                 </ProjectTitle>
