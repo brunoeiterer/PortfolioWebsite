@@ -33,7 +33,7 @@ export const ProjectVideo = styled.iframe`
     border-radius: 12px;
 
     @media (min-width: 768px) {
-        grid-column: 1 / span 8;
+        grid-column: 1 / span 4;
     }
 
     @media (min-width: 1024px) {
@@ -57,21 +57,33 @@ export const ProjectTitle = styled.h2`
 `;
 
 export const ProjectContent = styled.div`
-    grid-row: 2;
+    grid-column: 1 / span 4;
     display: flex;
     flex-direction: column;
-    grid-column: 7 / span 5;
 
     transition: transform 0.3s ease;
     border-radius: 12px;
 
     padding: 0.5rem;
+    margin-bottom: 1rem;
 
     &:hover {
         cursor: pointer;
         background: rgba(0,0,0,0.03);
         backdrop-filter: blur(4px);
         outline: 2px solid rgba(0,0,0,0.05);
+    }
+
+    @media (min-width: 768px) {
+        grid-row: 2;
+        grid-column: 5 / span 4;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 7 / span 5;
+        font-size: 1.25rem;
     }
 `;
 
@@ -114,10 +126,11 @@ export const ProjectImages = styled.div`
     display: flex;
     grid-column: 1 / span 4;
 
-    max-width: 95%;
+    max-width: 100%;
 
     @media (min-width: 768px) {
-        grid-column: 1 / span 8;
+        grid-column: 1 / span 4;
+        max-width: 95%;
     }
 
     @media (min-width: 1024px) {
