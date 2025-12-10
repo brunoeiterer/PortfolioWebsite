@@ -81,6 +81,7 @@ export default function Home() {
                     title='Lifejournaler'
                     description='Liferjounaler is a lightweight journaler app, focused on the needs of bipolar disorder.'
                     caption="This app is tailored to my girlfriend's mood/thoughts tracking needs. It contains options to track weather, mood sleep quality, menstrual cycle, exercise, appetite and levels of anxiety, racing thoughts, depression, autocriticism and sensorial overload. Users can also add custom notes and check trends using a graphic calendar or plotted data."
+                    images={['/images/LifeJournaler.png']}
                     techStack={['TypeScript', 'React', 'NextJS', 'C#', 'ASP.NET Core', 'Entity Framework', 'PostgreSQL']}
                 />
                 <Project

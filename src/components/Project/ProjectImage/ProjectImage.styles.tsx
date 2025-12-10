@@ -24,7 +24,8 @@ export const ProjectImageContainer = styled(Image)<{$expanded: boolean}>`
         left: 0;
         right: 0;
         bottom: 0;
-        width: 90%;
+        width: auto;
+        height: 90%;
         z-index: 2;
         margin: auto;
         box-shadow: 0 12px 40px rgba(0,0,0,0.25);
