@@ -6,6 +6,7 @@ import Project from "@/components/Project";
 import NavBar from "@/components/NavBar";
 import Contact from "@/components/Contact";
 import BackToTopButton from "@/components/BackToTopButton";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -108,57 +109,7 @@ export default function Home() {
             </Section>
 
             <BackToTopButton />
-
-            {/*
-                  <CarouselCard
-            logoImageSource='/images/RDILogo.png'
-            logoAltText='RDILogo'
-            title="Senior Software Engineer · RDI Software @ McDonald's Global"
-            period='2022 — PRESENT'
-            description="Development of McDonald's restaurants applications."
-            highlights={['Developed a new, modern UI for the POS',
-              'Developed the integration with new Fiscal Devices for Belgium, migrating from a serial connection solution to a GraphQL solution',
-              'Supported the migration of the mobile ordering solution from a legacy, convoluted solution, to a modern one',
-              'Solved critical and high-profile issues, including production incidents, 40% faster than average',
-              'Acted as team dev lead and SME on multiple occasions, guiding team members, providing solutions, managing delivery and client interaction']}
-            types={['Enterprise', 'Web', 'FullStack']}
-            techStack={['C#', 'NextJS', 'React', 'TypeScript', 'WCF', 'C++', 'C', 'JavaScript', 'RavenDB (NoSQL)']} />
-
-          <CarouselCard
-            logoImageSource='/images/RDILogo.png'
-            logoAltText='RDILogo'
-            title="Senior Software Engineer · RDI Software @ McDonald's Global"
-            period='2022 — PRESENT'
-            description="Development of McDonald's restaurants applications."
-            highlights={['Developed a new, modern UI for the POS',
-              'Developed the integration with new Fiscal Devices for Belgium, migrating from a serial connection solution to a GraphQL solution',
-              'Supported the migration of the mobile ordering solution from a legacy, convoluted solution, to a modern one',
-              'Solved critical and high-profile issues, including production incidents, 40% faster than average',
-              'Acted as team dev lead and SME on multiple occasions, guiding team members, providing solutions, managing delivery and client interaction']}
-            types={['Enterprise', 'Web', 'FullStack']}
-            techStack={['C#', 'NextJS', 'React', 'TypeScript', 'WCF', 'C++', 'C', 'JavaScript', 'RavenDB (NoSQL)']} />
-
-          <CarouselCard
-            logoImageSource='/images/RDILogo.png'
-            logoAltText='RDILogo'
-            title="Senior Software Engineer · RDI Software @ McDonald's Global"
-            period='2022 — PRESENT'
-            description="Development of McDonald's restaurants applications."
-            highlights={['Developed a new, modern UI for the POS',
-              'Developed the integration with new Fiscal Devices for Belgium, migrating from a serial connection solution to a GraphQL solution',
-              'Supported the migration of the mobile ordering solution from a legacy, convoluted solution, to a modern one',
-              'Solved critical and high-profile issues, including production incidents, 40% faster than average',
-              'Acted as team dev lead and SME on multiple occasions, guiding team members, providing solutions, managing delivery and client interaction']}
-            types={['Enterprise', 'Web', 'FullStack']}
-            techStack={['C#', 'NextJS', 'React', 'TypeScript', 'WCF', 'C++', 'C', 'JavaScript', 'RavenDB (NoSQL)']} />
-
-        <Carousel>
-        </Carousel>
-        {/*
-        <Carousel />
-        
-        <Footer />
-        */}
+            <Footer />
         </MainContainer>
     );
 }
