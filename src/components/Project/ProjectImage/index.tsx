@@ -21,6 +21,17 @@ export default function ProjectImage({ src, alt }: ProjectImageProps) {
         }
     }, [isExpanded]);
 
+    useEffect(() => {
+        const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === 'Escape' && isExpanded) {
+                setIsExpanded(false);
+            }
+        };
+
+        window.addEventListener('keydown', handleEscape);
+        return () => window.removeEventListener('keydown', handleEscape);
+    }, [isExpanded]);
+
     return (
         <>
             {isExpanded &&
