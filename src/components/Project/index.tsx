@@ -4,7 +4,7 @@ import { ProjectCaption, ProjectContainer, ProjectContent, ProjectDescription, P
 import ProjectImage from "./ProjectImage";
 
 export interface ProjectProps {
-    url: string;
+    url?: string;
     title: string;
     description: string;
     caption: string;
@@ -19,7 +19,8 @@ export default function Project({ url, title, description, caption, images, vide
         <ProjectContainer>
 
             <ProjectContent
-                onClick={() => window.open(url, '_blank')}
+                $hasLink={!!url}
+                onClick={() => !!url ? window.open(url, '_blank') : null}
             >
                 <ProjectTitle>
                     { title }

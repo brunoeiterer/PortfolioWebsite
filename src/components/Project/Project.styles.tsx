@@ -56,7 +56,7 @@ export const ProjectTitle = styled.h2`
     }
 `;
 
-export const ProjectContent = styled.div`
+export const ProjectContent = styled.div<{$hasLink: boolean}>`
     grid-column: 1 / span 4;
     display: flex;
     flex-direction: column;
@@ -68,10 +68,12 @@ export const ProjectContent = styled.div`
     margin-bottom: 1rem;
 
     &:hover {
-        cursor: pointer;
-        background: rgba(0,0,0,0.03);
-        backdrop-filter: blur(4px);
-        outline: 2px solid rgba(0,0,0,0.05);
+        ${({ $hasLink }) => $hasLink && `
+            cursor: pointer;
+            background: rgba(0,0,0,0.03);
+            backdrop-filter: blur(4px);
+            outline: 2px solid rgba(0,0,0,0.05);
+        `}
     }
 
     @media (min-width: 768px) {

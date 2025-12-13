@@ -102,6 +102,13 @@ export default function Home() {
                     videoTitle='Overblooming Trailer'
                     techStack={['C#', 'Godot', 'Blender', 'Steam']}
                 />
+                <Project
+                    title='ProfitSMe'
+                    description='ProfitSMe is a windows desktop app for results calculations of small companies.'
+                    caption='This was a freelance project I developed. It includes patrimony control, chart of accounts, monthly and yearly results calculation, comparison of results and printing and exporting the results to Excel and PDF.'
+                    images={['/images/ProfitSMe.png']}
+                    techStack={['Java', 'JavaFX']}
+                />
             </Section>
 
             <Section id='contact' title='Contact'>
