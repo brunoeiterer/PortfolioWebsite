@@ -26,4 +26,10 @@ export const ContactItem = styled.div`
     gap: 0.5rem;
 
     align-items: center;
+
+    &:hover > * {
+        transition: 0.1s ease-in-out;
+        filter: brightness(0) invert(0.4575);
+        cursor: pointer;
+    }
 `;
