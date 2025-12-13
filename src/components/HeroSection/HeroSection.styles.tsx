@@ -8,11 +8,13 @@ export const HeroSectionContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / span 4;
 
-    margin-top: 1rem;
+    padding-top: 3rem;
 
     @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-column: 1 / span 8;
+
+        padding-top: 7rem;
 
         margin-left: 3rem;
         margin-right: 3rem;

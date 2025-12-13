@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 export const NavBarContainer = styled.nav<{$isOpen: boolean}>`
+    position: fixed;
+    width: 100%;
+    z-index: 3;
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 27px;

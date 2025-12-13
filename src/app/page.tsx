@@ -5,7 +5,6 @@ import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Project from "@/components/Project";
 import NavBar from "@/components/NavBar";
 import Contact from "@/components/Contact";
-import BackToTopButton from "@/components/BackToTopButton";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -115,7 +114,6 @@ export default function Home() {
                 <Contact />
             </Section>
 
-            <BackToTopButton />
             <Footer />
         </MainContainer>
     );
